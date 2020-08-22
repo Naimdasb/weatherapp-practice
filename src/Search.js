@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Weather from './Weather'
+import styles from './search.module.css'
 require('dotenv').config()
+
 
 // configure your .env key with openweather.org
 
@@ -53,11 +55,11 @@ export default function Search() {
     }
 
     return (
-        <div>
-            <h1>Search</h1>
+        <div className={styles.bg}>
+            <h1>Weather App</h1>
             <form onSubmit={handleSubmit}>
-                <input type='text' value={query} onChange={handleChange}></input>
-                <input type='submit' value='submit'></input>
+                <input type='text' value={query} onChange={handleChange} className={styles.input}></input>
+                <input type='submit' value='Submit' className={styles.button}></input>
             </form>
             {flag !== "false"?<Weather weather={weather}/> : "Please enter your city..."}
 
