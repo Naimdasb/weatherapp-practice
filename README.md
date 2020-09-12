@@ -1,3 +1,9 @@
+Need API KEY from openweatherapi
+
+#Preview Images
+
+[![Untitled.png](https://i.postimg.cc/1tbG92tL/Untitled.png)](https://postimg.cc/ZBFBHf6c)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
